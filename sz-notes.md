@@ -12,11 +12,12 @@ You should see input.txt, meta.pkl, train.bin, val.bin files are created in the 
 python train.py config\train_shakespeare_char.py
 ```
 You should see out-shakespeare-char\ckpt.pt is created.
-### Evaluate the model
+## Validate the model
+Compare the loss on the training data and validation data.
 ```commandline
-python train.py config\eval_nano.py
+python validate.py config\eval_nano.py
 ```
-## Generate some sample text by the model
+## Generate some sample text 
 ```commandline
 python sample.py --out_dir=out-shakespeare-char
 ```
